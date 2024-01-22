@@ -18,13 +18,13 @@ public class GuessingGame
     {
         Scanner keyboard = new Scanner(System.in);
         Random rand = new Random();   
-        // if(args.length > 0)
-        // {
-        //     rand.setSeed(Long.valueOf(args[0]));
-        // }
-        // int secretNumber = rand.nextInt(100) + 1;
+        if(args.length > 0)
+        {
+            rand.setSeed(Long.valueOf(args[0]));
+        }
+        int secretNumber = rand.nextInt(100) + 1;
 
-        int secretNumber = 53;
+        //int secretNumber = 53;
 
         final int QUIT = 0;
         int guessCounter = 1; 
